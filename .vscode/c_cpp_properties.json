@@ -9,7 +9,7 @@
 			"${vex_gcc}/arm-none-eabi/thumb",
 			"${vex_sdkPath}/gcc/include",
 			"${vex_sdkPath}/include/**",
-			"${workspaceFolder}/include/**",
+			"${workspaceFolder}/hdr/**",
 			"${workspaceFolder}/src/**"
 		]
 	},

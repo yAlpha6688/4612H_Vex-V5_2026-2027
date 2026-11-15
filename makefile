@@ -15,13 +15,13 @@ SRC_C += $(wildcard src/*/*.c)
 OBJ = $(addprefix $(BUILD)/, $(addsuffix .o, $(basename $(SRC_C))) )
 
 # location of include files that c and cpp files depend on
-SRC_H  = $(wildcard include/*.h)
+SRC_H  = $(wildcard hdr/*.h)
 
 # additional dependancies
 SRC_A  = makefile
 
 # project header file locations
-INC_F  = include
+INC_F  = hdr
 
 # build targets
 all: $(BUILD)/$(PROJECT).bin
