@@ -9,6 +9,7 @@
 
 #include "vex.h"
 #include "vars.hpp"
+#include "helpers.hpp"
 
 //competition
 vex::competition fightyFight;
