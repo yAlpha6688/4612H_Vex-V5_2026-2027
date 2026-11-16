@@ -10,11 +10,9 @@
 #include "vex.h"
 #include "vars.hpp"
 
-using namespace vex;
-
 // A global instance of competition
-competition fightyFight;
-brain thinkyThink;
+vex::competition fightyFight;
+vex::brain thinkyThink;
 
 // define your global instances of motors and other devices here
 
@@ -72,7 +70,7 @@ void usercontrol(void) {
     // update your motors, etc.
     // ........................................................................
 
-    wait(20, msec); // Sleep the task for a short amount of time to
+    vex::wait(20, vex::msec); // Sleep the task for a short amount of time to
                     // prevent wasted resources.
   }
 }
@@ -90,6 +88,6 @@ int main() {
 
   // Prevent main from exiting with an infinite loop.
   while (true) {
-    wait(100, msec);
+    vex::wait(100, vex::msec);
   }
 }
