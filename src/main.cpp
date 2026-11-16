@@ -13,7 +13,8 @@
 using namespace vex;
 
 // A global instance of competition
-competition Competition;
+competition fightyFight;
+brain thinkyThink;
 
 // define your global instances of motors and other devices here
 
@@ -81,8 +82,8 @@ void usercontrol(void) {
 //
 int main() {
   // Set up callbacks for autonomous and driver control periods.
-  Competition.autonomous(autonomous);
-  Competition.drivercontrol(usercontrol);
+  fightyFight.autonomous(autonomous);
+  fightyFight.drivercontrol(usercontrol);
 
   // Run the pre-autonomous function.
   pre_auton();
